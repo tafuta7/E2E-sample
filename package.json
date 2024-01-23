@@ -1,0 +1,22 @@
+{
+  "name": "e2e-sample",
+  "version": "1.0.0",
+  "description": "E2Eテストを試す",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "esbuild": "esbuild src/index.tsx --bundle --outfile=dist/bundle.js --minify --sourcemap --define:process.env.NODE_ENV=\"'production'\" --jsx-factory=React.createElement --jsx-fragment=React.Fragment""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "esbuild": "^0.19.11",
+    "typescript": "^5.3.3"
+  }
+}
